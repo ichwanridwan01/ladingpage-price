@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+}
+.container .content-main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Toggle */
+
+.container .content-main .toggle-price {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content-main .toggle-price .label {
+  background-color: hsl(237, 63%, 64%);
+  display: flex;
+  width: 50px;
+  border-radius: 50px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+}
+.container .content-main .toggle-price .checkbox {
+  opacity: 0;
+}
+
+.container .content-main .toggle-price .checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.container .content-main .toggle-price .checkbox:checked + .label {
+  background-color: hsl(236, 72%, 79%);
+}
+
+.container .content-main .toggle-price .ball {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+
+.container .content-main .body-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container .content-main header h2 {
+  text-align: center;
+}
+
+/* Card 1 */
+
+.container .content-main .body-card .card-1 .main {
+  display: grid;
+  gap: 20px;
+}
+
+.container .content-main .body-card .card-1 .main {
+  background-color: hsl(240, 78%, 98%);
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 10px 30px 30px 20px;
+  text-align: center;
+}
+
+.container .content-main .body-card .card-1 .main button {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: rgb(163, 168, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(163, 168, 240, 1) 0%,
+    rgba(105, 111, 221, 1) 100%,
+    rgba(175, 103, 233, 1) 100%
+  );
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+
+.container .content-main .body-card .card-1 .main button:focus {
+  outline: none;
+}
+
+/* card 2 */
+.container .content-main .body-card .card-2 .main {
+  display: grid;
+  gap: 20px;
+}
+
+.container .content-main .body-card .card-2 .main {
+  width: 250px;
+  height: 350px;
+  background-color: hsl(237, 63%, 64%);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  padding-bottom: 450px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 50px;
+}
+
+.container .content-main .body-card .card-2 .main hr {
+  border: 0.1px solid hsl(237, 29%, 65%);
+}
+
+.container .content-main .body-card .card-2 .main button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  color: hsl(237, 63%, 64%);
+  font-weight: 700;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+.container .content-main .body-card .card-2 .main button:focus {
+  outline: none;
+}
+
+/* card 3 */
+.container .content-main .body-card .card-3 .main {
+  display: grid;
+  gap: 20px;
+}
+
+.container .content-main .body-card .card-3 .main {
+  background-color: hsl(240, 78%, 98%);
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 10px 30px 30px 20px;
+  text-align: center;
+}
+
+.container .content-main .body-card .card-3 .main button {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: rgb(163, 168, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(163, 168, 240, 1) 0%,
+    rgba(105, 111, 221, 1) 100%,
+    rgba(175, 103, 233, 1) 100%
+  );
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+.container .content-main .body-card .card-3 .main button:focus {
+  outline: none;
+}
+
+/*! Responsive */
+
+@media (max-width: 500px) {
+  .container .content-main .body-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .content-main .body-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ! Call Property */
+hr {
+  border: 0.1px solid hsl(0, 0%, 88%);
+}
